@@ -3,6 +3,7 @@
 n=int(raw_input("Enter the no. of elements :"))
 a=[]
 d=n
+b=0
 print "Enter the elements :"
 for i in xrange(n):
     x=int(input())
@@ -14,4 +15,7 @@ for i in xrange(n):
             if c<d:
                b=a[i]
                d=c
-print b
+if not b:
+    print "unique"
+else:
+    print b
