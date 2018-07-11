@@ -2,6 +2,7 @@
 
 n=int(raw_input("Enter the no. of elements :"))
 a=[]
+d=n
 print "Enter the elements :"
 for i in xrange(n):
     x=int(input())
@@ -9,6 +10,8 @@ for i in xrange(n):
 for i in xrange(n):
     for j in range(i+1,n):
         if a[i]==a[j]:
-            b=a[i]
-            break 
+            c=j-i
+            if c<d:
+               b=a[i]
+               d=c
 print b
