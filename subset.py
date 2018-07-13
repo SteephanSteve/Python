@@ -13,9 +13,10 @@ print "B :"
 for i in range(m):
       x=int(input())
       b.append(x)
-for i in range(m):
-      if b[i] not in a:
-        c+=1
+if n>m:
+   for i in range(m):
+       if b[i] not in a:
+          c+=1
 if c==0:
    print "YES"
 else:
